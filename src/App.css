@@ -1,0 +1,91 @@
+body{
+    background-color: #ffffff;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+body.dark-theme{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+body.dark-theme.user-card{
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+
+body.dark-theme input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-theme button {
+    background-color: #444;
+    color: white;
+}
+
+
+li {
+    height: 200px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #a31717;
+    &:hover {
+        color: lightcoral;
+    }
+}
+
+.info {
+    height: 90%;
+    vertical-align: top;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.info-container{
+    display: inline-flex;
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 5px solid black;
+    gap: 10px;
+    .info{
+        height: inherit;
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+}
+
+.error-message {
+    color: red;
+}
+
+.user-card{
+    display: flex;
+    align-items: center;
+    img {
+        height: 90%;
+        border: 5px solid black;
+        border-radius: 15px;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 30px;
+    background-color: gray;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,38 @@
+.theme-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 24px;
+}
+.theme-switch__checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.theme-switch__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: 0.2s;
+}
+.theme-switch__slider:before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: .2s;
+    top: 2px;
+    left: 2px;
+    background-color: white;
+
+}
+
+.theme-switch__checkbox:checked + .theme-switch__slider {
+    background-color: black;
+}
+.theme-switch__checkbox:checked + .theme-switch__slider:before {
+    transform: translateX(36px);
+}
